@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #16213e;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#__nuxt {
+  min-height: 100vh;
+  background-color: #16213e;
+}

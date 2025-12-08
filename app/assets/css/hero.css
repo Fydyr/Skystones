@@ -1,0 +1,261 @@
+.game-intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-placeholder {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Rules Section */
+.rules-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rule-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  background: linear-gradient(135deg, rgba(26, 38, 62, 0.9) 0%, rgba(20, 30, 50, 0.95) 100%);
+  border: 2px solid rgba(78, 204, 163, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.rule-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(78, 204, 163, 0.4);
+  border-color: rgba(78, 204, 163, 0.8);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  color: #4ecca3;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.rule-card p {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, rgba(78, 204, 163, 0.08) 0%, rgba(78, 204, 163, 0.15) 100%);
+  border: 2px dashed rgba(78, 204, 163, 0.4);
+  border-radius: 0.5rem;
+  padding: 3rem 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.image-placeholder:hover {
+  border-color: rgba(78, 204, 163, 0.7);
+  background: linear-gradient(135deg, rgba(78, 204, 163, 0.12) 0%, rgba(78, 204, 163, 0.2) 100%);
+}
+
+.placeholder-text {
+  color: #4ecca3;
+  font-style: italic;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Tips Section */
+.tips-section {
+  margin-bottom: 4rem;
+}
+
+.tips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Override UAlert styles for better readability */
+.tips-container :deep(div) {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-left: 3px solid rgba(78, 204, 163, 0.6) !important;
+  padding-left: 1.5rem !important;
+}
+
+.tips-container :deep(div div) {
+  background: transparent !important;
+  color: #e0e0e0 !important;
+}
+
+.tips-container :deep(p),
+.tips-container :deep(span),
+.tips-container :deep(h1),
+.tips-container :deep(h2),
+.tips-container :deep(h3),
+.tips-container :deep(h4),
+.tips-container :deep(h5),
+.tips-container :deep(h6) {
+  color: #c0c0c0 !important;
+}
+
+.tips-container :deep(svg) {
+  color: #4ecca3 !important;
+}
+
+.tips-container :deep(.font-semibold),
+.tips-container :deep([class*="font-semibold"]) {
+  color: #ffffff !important;
+  font-size: 1.1rem !important;
+}
+
+.tips-container :deep(.text-gray-500),
+.tips-container :deep([class*="text-gray"]) {
+  color: #b0b0b0 !important;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, rgba(26, 38, 62, 0.95) 0%, rgba(20, 30, 50, 0.98) 100%);
+  border: 2px solid rgba(78, 204, 163, 0.5);
+  border-radius: 1.5rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(78, 204, 163, 0.2);
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4ecca3;
+  text-shadow: 0 2px 8px rgba(78, 204, 163, 0.3);
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.cta-image-placeholder {
+  background: linear-gradient(135deg, rgba(78, 204, 163, 0.1) 0%, rgba(78, 204, 163, 0.15) 100%);
+  border: 2px dashed rgba(78, 204, 163, 0.5);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 600px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.cta-image-placeholder:hover {
+  border-color: rgba(78, 204, 163, 0.8);
+  background: linear-gradient(135deg, rgba(78, 204, 163, 0.15) 0%, rgba(78, 204, 163, 0.25) 100%);
+}
+
+.cta-image-placeholder .placeholder-text {
+  color: #4ecca3;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-intro {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1rem;
+  }
+}
