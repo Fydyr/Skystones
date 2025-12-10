@@ -2,10 +2,10 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-content">
-        <p>&copy; 2025 Aeroliths. All rights reserved.</p>
+        <p>{{ SITE_INFO.copyright }}</p>
         <div class="footer-links">
           <a href="/legal">Legal</a>
-          <a href="https://discord.gg/zUSjypxYdR" target="_blank" rel="noopener noreferrer" class="discord-link">
+          <a :href="SITE_INFO.discord.url" target="_blank" rel="noopener noreferrer" class="discord-link">
             <UIcon name="i-simple-icons-discord" class="discord-icon" />
             Discord
           </a>
@@ -16,6 +16,7 @@
 </template>
 
 <script setup lang="ts">
+import { SITE_INFO } from '~/constants/site'
 </script>
 
 <style scoped src="~/assets/css/footer.css"></style>
