@@ -10,16 +10,20 @@ datasource db {
 
 // Example model - adapt to your needs
 model User {
-  id             String          @id @default(cuid())
-  email          String          @unique
-  username       String          @unique
-  name           String?
-  surname        String?
-  createdAt      DateTime        @default(now())
-  updatedAt      DateTime        @updatedAt
+  id        String   @id @default(cuid())
+  email     String   @unique
+  username  String   @unique
+  name      String?
+  surname   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   // Relation to Authentication
   authentication Authentication?
+
+  // Relation to Role
+  roleId String?
+  role   Role?   @relation(fields: [roleId], references: [id])
 
   @@map("users")
 }
@@ -31,8 +35,8 @@ model Authentication {
   updatedAt DateTime @updatedAt
 
   // Foreign key to User
-  userId    String   @unique
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("authentications")
 }
@@ -50,4 +54,14 @@ model Lithos {
   updatedAt  DateTime @updatedAt
 
   @@map("lithos")
+}
+
+model Role {
+  id   String @id @default(cuid())
+  name String @unique
+
+  // Relation to Users
+  users User[]
+
+  @@map("roles")
 }
